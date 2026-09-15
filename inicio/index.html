@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACTUALÍZATE 40+ | +150 mapas visuales para usar la tecnología sin depender de nadie</title>
+<meta name="description" content="Más de 150 mapas visuales para ponerte al día con la tecnología de hoy y usar mejor el celular y el computador, sin depender de nadie.">
+
+<!-- ============================================================
+     ACTUALÍZATE 40+ — Página de ventas (adaptación LATAM)
+     Clon estructural de kitatualiza40mais.lovable.app
+     ------------------------------------------------------------
+     ESTADO: lista para publicar.
+       · Precios:   Completo US$12,99 · Básico US$5,99 · Oferta del pop-up US$8,99
+       · Checkout:  links de Hotmart conectados en los 3 botones de compra
+       · Tracking:  Pixel de Meta 1385390483737088 + Utmify (en el <head>)
+       · Imágenes:  31 archivos webp en /img (2 MB en total)
+     Pendiente: reemplazar los testimonios por compradoras reales.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:            oklch(99% .004 300);
+  --fg:            oklch(28% .07 295);
+  --fg-soft:       oklch(46% .05 295);
+  --primary:       oklch(42% .16 295);
+  --primary-dark:  oklch(33% .14 293);
+  --primary-soft:  oklch(94% .035 300);
+  --accent:        oklch(90% .06 300);
+  --muted:         oklch(96% .015 300);
+  --card:          #ffffff;
+  --border:        oklch(90% .035 300);
+  --amber:         #E8A317;
+  --amber-dark:    #7A5300;
+  --green:         #1B8A5A;
+  --grad-cta:      linear-gradient(135deg, oklch(48% .18 300), oklch(38% .15 292));
+  --shadow:        0 4px 16px oklch(42% .16 295 / .10);
+  --shadow-lift:   0 10px 30px oklch(42% .16 295 / .18);
+  --radius:        18px;
+  --maxw:          1120px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:"Nunito Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+img{ max-width:100%; height:auto; display:block; }
+
+.wrap{ width:100%; max-width:var(--maxw); margin:0 auto; padding-left:20px; padding-right:20px; }
+.narrow{ max-width:820px; }
+
+section{ padding-block:56px; }
+@media (min-width:768px){ section{ padding-block:76px; } }
+
+h1,h2,h3{ line-height:1.2; letter-spacing:-.015em; margin:0; text-wrap:balance; }
+h1{ font-size:clamp(28px,6.2vw,46px); font-weight:900; }
+h2{ font-size:clamp(24px,4.6vw,36px); font-weight:900; }
+h3{ font-size:clamp(18px,2.6vw,22px); font-weight:800; }
+p{ margin:0 0 14px; }
+p:last-child{ margin-bottom:0; }
+
+.center{ text-align:center; }
+.lead{ font-size:clamp(16px,2.2vw,19px); color:var(--fg-soft); }
+
+/* ---------- Barra de oferta ---------- */
+.topbar{
+  position:sticky; top:0; z-index:60;
+  background:var(--amber);
+  color:#3B2600;
+  font-size:13.5px; font-weight:800;
+  text-align:center;
+  padding:9px 16px;
+  letter-spacing:.01em;
+}
+
+/* ---------- Botones ---------- */
+.cta{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  width:100%; max-width:460px;
+  background:var(--grad-cta);
+  color:#fff;
+  border:0; border-radius:999px;
+  padding:18px 28px;
+  font-family:inherit;
+  font-size:clamp(15px,2.4vw,18px); font-weight:900;
+  text-transform:uppercase; letter-spacing:.03em;
+  text-decoration:none; text-align:center;
+  box-shadow:var(--shadow-lift);
+  cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.cta:hover{ transform:translateY(-2px); box-shadow:0 14px 36px oklch(42% .16 295 / .28); }
+.cta:active{ transform:scale(.985); }
+.cta.ghost{
+  background:#fff; color:var(--primary);
+  border:2px solid var(--border);
+  box-shadow:var(--shadow);
+}
+.cta-note{
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  margin-top:14px;
+  font-size:13.5px; color:var(--fg-soft); font-weight:600;
+  text-align:center;
+}
+.cta-block{ display:flex; flex-direction:column; align-items:center; }
+
+/* ---------- Badges ---------- */
+.badge{
+  display:inline-block;
+  background:var(--primary-soft);
+  color:var(--primary);
+  border-radius:999px;
+  padding:7px 18px;
+  font-size:12.5px; font-weight:900;
+  letter-spacing:.12em; text-transform:uppercase;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  background:
+    radial-gradient(900px 460px at 50% -10%, oklch(94% .04 300) 0%, transparent 70%),
+    var(--bg);
+  padding-top:40px;
+}
+.hero h1{ margin:18px 0 0; }
+.hero .lead{ margin-top:16px; }
+.hero-mock{ margin:32px auto 8px; max-width:540px; }
+.hero-bullets{
+  list-style:none; margin:28px auto 30px; padding:0;
+  max-width:560px;
+  display:grid; gap:10px;
+}
+.hero-bullets li{
+  display:flex; align-items:flex-start; gap:11px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:13px 16px;
+  font-weight:700; font-size:15.5px;
+  text-align:left;
+  box-shadow:0 2px 8px oklch(42% .16 295 / .05);
+}
+.tick{
+  flex:0 0 auto; width:22px; height:22px; margin-top:1px;
+  border-radius:50%; background:var(--primary-soft);
+  display:grid; place-items:center;
+  color:var(--primary); font-size:13px; font-weight:900;
+}
+
+/* ---------- Imágenes ---------- */
+.shot{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:16px;
+  background:var(--muted);
+}
+.shot-hero{
+  border-radius:20px;
+  box-shadow:var(--shadow-lift);
+}
+.shot-card{
+  aspect-ratio:3/4;
+  object-fit:cover;
+  object-position:top center;
+  border-radius:0;
+}
+.shot-bonus{ border-radius:12px; box-shadow:var(--shadow); }
+.shot-plan{ border-radius:16px; margin-bottom:18px; box-shadow:var(--shadow); }
+
+/* ---------- Sección clara alternada ---------- */
+.tinted{ background:var(--muted); }
+
+/* ---------- Tabs de categorías ---------- */
+.tabs{
+  display:flex; flex-wrap:wrap; gap:10px; justify-content:center;
+  margin:26px 0 22px;
+}
+.tab{
+  display:inline-flex; align-items:center; gap:8px;
+  background:#fff; color:var(--fg);
+  border:1.5px solid var(--border); border-radius:999px;
+  padding:11px 20px;
+  font-family:inherit; font-size:14.5px; font-weight:800;
+  cursor:pointer;
+  transition:all .15s ease;
+}
+.tab:hover{ border-color:var(--primary); }
+.tab[aria-selected="true"]{
+  background:var(--grad-cta); color:#fff; border-color:transparent;
+  box-shadow:var(--shadow);
+}
+.panel[hidden]{ display:none; }
+
+.rail{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:minmax(230px, 1fr);
+  gap:16px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding:6px 2px 18px;
+  -webkit-overflow-scrolling:touch;
+}
+.rail::-webkit-scrollbar{ height:7px; }
+.rail::-webkit-scrollbar-thumb{ background:var(--accent); border-radius:99px; }
+.rail > figure{
+  scroll-snap-align:center;
+  margin:0;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 2px 10px oklch(42% .16 295 / .06);
+  display:flex; flex-direction:column;
+}
+.rail figcaption{
+  padding:14px 16px 18px;
+  font-size:14.5px; font-weight:700; line-height:1.45;
+}
+@media (min-width:900px){
+  .rail{
+    grid-auto-flow:row;
+    grid-template-columns:repeat(3,1fr);
+    overflow:visible;
+  }
+}
+
+/* ---------- Lista de checks genérica ---------- */
+.checks{ list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+.checks li{
+  display:flex; align-items:flex-start; gap:12px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:15px 18px;
+  font-weight:700; font-size:15.5px;
+  box-shadow:0 2px 8px oklch(42% .16 295 / .05);
+}
+
+/* ---------- Contenido del kit ---------- */
+.kit-grid{
+  display:grid; gap:18px;
+  grid-template-columns:1fr;
+  margin-top:30px;
+}
+@media (min-width:720px){ .kit-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (min-width:1000px){ .kit-grid{ grid-template-columns:repeat(4,1fr); } }
+.kit-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px 22px;
+  box-shadow:var(--shadow);
+}
+.kit-card .ico{ font-size:32px; }
+.kit-card h3{ margin:10px 0 6px; }
+.kit-card .sub{ font-size:14px; color:var(--fg-soft); font-weight:700; margin-bottom:14px; }
+.kit-card ul{ list-style:none; margin:0; padding:0; display:grid; gap:9px; }
+.kit-card li{ display:flex; gap:9px; font-size:14.5px; line-height:1.45; }
+.kit-card li::before{ content:"✓"; color:var(--primary); font-weight:900; flex:0 0 auto; }
+.kit-card li.more{ color:var(--fg-soft); font-weight:800; }
+.kit-card li.more::before{ content:"+"; }
+
+/* ---------- Urgencia / contador ---------- */
+.urgency{
+  background:var(--grad-cta);
+  color:#fff;
+}
+.urgency h2{ color:#fff; }
+.urgency p{ color:oklch(92% .03 300); }
+.clock{
+  display:flex; justify-content:center; gap:12px;
+  margin:26px 0;
+}
+.clock .unit{
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:14px;
+  min-width:88px;
+  padding:12px 8px;
+}
+.clock .n{
+  display:block;
+  font-size:clamp(28px,7vw,40px); font-weight:900; line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.clock .l{
+  display:block; margin-top:6px;
+  font-size:11px; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
+  opacity:.85;
+}
+.urgency .cta{ background:#fff; color:var(--primary); }
+.urgency .cta:hover{ background:#fff; }
+
+/* ---------- Ideal para ti ---------- */
+.ideal{ display:grid; gap:14px; margin-top:28px; max-width:760px; margin-inline:auto; }
+.ideal .item{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:22px;
+  text-align:center;
+  box-shadow:0 2px 10px oklch(42% .16 295 / .06);
+}
+.ideal .num{
+  display:block;
+  font-size:24px; font-weight:900; color:var(--primary);
+  margin-bottom:6px;
+}
+.ideal .item p{ font-weight:700; font-size:16px; }
+
+/* ---------- Bonos ---------- */
+.bonus-grid{
+  display:grid; gap:18px; margin-top:26px;
+  grid-template-columns:1fr;
+}
+@media (min-width:720px){ .bonus-grid{ grid-template-columns:repeat(2,1fr); } }
+.bonus{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:var(--shadow);
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:18px;
+  align-items:start;
+}
+@media (max-width:479px){ .bonus{ grid-template-columns:1fr; } }
+.bonus h3{ font-size:19px; }
+.price-flip{
+  display:inline-block; margin:8px 0 12px;
+  font-size:14px; font-weight:900;
+}
+.price-flip .was{ text-decoration:line-through; color:var(--fg-soft); font-weight:700; }
+.price-flip .now{ color:var(--green); }
+.bonus ul{ list-style:none; margin:12px 0 0; padding:0; display:grid; gap:7px; font-size:14.5px; }
+.bonus li{ display:flex; gap:8px; }
+.bonus li::before{ content:"✓"; color:var(--primary); font-weight:900; }
+.bonus li.more{ color:var(--fg-soft); font-weight:800; }
+.bonus li.more::before{ content:"+"; }
+
+/* ---------- Planes ---------- */
+.planes{
+  display:grid; gap:22px; margin-top:32px;
+  grid-template-columns:1fr;
+  align-items:start;
+}
+@media (min-width:840px){ .planes{ grid-template-columns:1.15fr 1fr; } }
+.plan{
+  background:#fff;
+  border:1.5px solid var(--border);
+  border-radius:24px;
+  padding:26px 24px 28px;
+  box-shadow:var(--shadow);
+  position:relative;
+}
+.plan.best{
+  border:2.5px solid var(--primary);
+  box-shadow:var(--shadow-lift);
+}
+.ribbon{
+  position:absolute; top:-15px; left:50%; transform:translateX(-50%);
+  background:var(--amber); color:#3B2600;
+  border-radius:999px;
+  padding:6px 20px;
+  font-size:12px; font-weight:900; letter-spacing:.1em; text-transform:uppercase;
+  white-space:nowrap;
+}
+.plan .tier{ font-size:13px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; color:var(--fg-soft); }
+.plan h3{ margin:6px 0 2px; font-size:26px; }
+.plan .tier-sub{ font-size:14px; font-weight:800; color:var(--primary); }
+.price{ margin:18px 0 4px; }
+.price .was{ display:block; font-size:15px; color:var(--fg-soft); text-decoration:line-through; font-weight:700; }
+.price .now{ display:block; font-size:clamp(38px,9vw,52px); font-weight:900; line-height:1; letter-spacing:-.03em; }
+.price .terms{ display:block; margin-top:6px; font-size:13.5px; color:var(--fg-soft); font-weight:700; }
+.plan ul{ list-style:none; margin:22px 0 24px; padding:0; display:grid; gap:10px; }
+.plan li{ display:flex; gap:10px; font-size:15px; line-height:1.45; }
+.plan li::before{ content:"✓"; color:var(--primary); font-weight:900; flex:0 0 auto; }
+.plan li.gift::before{ content:"🎁"; }
+.plan li.off{ color:var(--fg-soft); }
+.plan li.off::before{ content:"—"; color:var(--fg-soft); }
+.plan .cta{ max-width:none; }
+
+/* ---------- Modal de oferta (downsell) ---------- */
+.modal-bg{
+  position:fixed; inset:0; z-index:100;
+  background:rgba(27,27,77,.55);
+  backdrop-filter:blur(3px);
+  display:none; align-items:flex-start; justify-content:center;
+  padding:24px 16px; overflow-y:auto;
+}
+.modal-bg.abierto{ display:flex; }
+.modal{
+  background:#fff; border-radius:24px;
+  width:100%; max-width:500px;
+  padding:30px 26px 26px;
+  position:relative;
+  box-shadow:0 24px 60px rgba(27,27,77,.35);
+  animation:sube .28s ease-out;
+}
+@keyframes sube{ from{ transform:translateY(18px); opacity:0 } to{ transform:none; opacity:1 } }
+.modal-x{
+  position:absolute; top:14px; right:14px;
+  width:38px; height:38px; border:0; border-radius:50%;
+  background:var(--muted); color:var(--fg-soft);
+  font-size:20px; line-height:1; cursor:pointer;
+}
+.modal-x:hover{ background:var(--accent); color:var(--primary); }
+.modal .kicker{
+  display:block; text-align:center;
+  font-size:12px; font-weight:900; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--fg-soft); margin-bottom:10px;
+}
+.modal h3{
+  font-size:clamp(21px,4.6vw,27px); font-weight:900; line-height:1.2;
+  text-align:center; margin-bottom:13px;
+}
+.modal h3 em{ font-style:normal; color:var(--primary); }
+.modal p{ font-size:15px; line-height:1.5; margin-bottom:11px; }
+.modal .destacado{ font-weight:800; }
+.modal ul{ list-style:none; margin:4px 0 16px; padding:0; display:grid; gap:7px; }
+.modal ul li{ position:relative; padding-left:26px; font-size:15px; font-weight:700; line-height:1.45; }
+.modal ul li::before{ content:"✓"; position:absolute; left:0; top:0; color:var(--green); font-weight:900; }
+.modal ul li span{ font-weight:400; color:var(--fg-soft); }
+.modal img{ width:100%; max-width:230px; margin:0 auto 16px; display:block; border-radius:14px; }
+.modal .precio{ text-align:center; margin-bottom:18px; }
+.modal .precio .antes{ font-size:17px; color:var(--fg-soft); text-decoration:line-through; font-weight:700; }
+.modal .precio .ahora{
+  display:block; font-size:clamp(38px,9vw,50px); font-weight:900;
+  line-height:1.05; letter-spacing:-.03em; color:var(--primary);
+}
+.modal .cta{ max-width:none; }
+.modal .no{
+  display:block; text-align:center; margin-top:14px;
+  font-size:14px; color:var(--fg-soft); text-decoration:underline;
+  background:none; border:0; width:100%; cursor:pointer;
+  font-family:inherit; line-height:1.5;
+}
+.modal .no:hover{ color:var(--fg); }
+
+/* ---------- Pagos ---------- */
+.pagos{
+  margin-top:26px; text-align:center;
+  font-size:13.5px; color:var(--fg-soft); font-weight:700;
+}
+.pagos .chips{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:10px; }
+.pagos .chip{
+  background:#fff; border:1px solid var(--border); border-radius:999px;
+  padding:6px 14px; font-size:12.5px; font-weight:800; color:var(--fg);
+}
+
+/* ---------- Testimonios ---------- */
+.testis{ display:grid; gap:18px; margin-top:30px; grid-template-columns:1fr; }
+@media (min-width:820px){ .testis{ grid-template-columns:repeat(3,1fr); } }
+.testi{
+  background:#fff; border:1px solid var(--border); border-radius:18px;
+  padding:24px 22px;
+  box-shadow:var(--shadow);
+}
+.stars{ color:var(--amber); font-size:15px; letter-spacing:2px; margin-bottom:10px; }
+.testi blockquote{ margin:0 0 16px; font-size:16px; line-height:1.55; font-weight:600; }
+.testi .who{ font-size:14px; font-weight:900; }
+.testi .who span{ display:block; font-weight:700; color:var(--fg-soft); font-size:13.5px; }
+
+/* ---------- Garantía ---------- */
+.guarantee{
+  max-width:640px; margin-inline:auto;
+  background:#fff;
+  border:2px solid var(--accent);
+  border-radius:22px;
+  padding:32px 26px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+.guarantee .seal{ font-size:46px; }
+
+/* ---------- Pasos ---------- */
+.pasos{ display:grid; gap:16px; margin-top:30px; grid-template-columns:1fr; }
+@media (min-width:760px){ .pasos{ grid-template-columns:repeat(3,1fr); } }
+.paso{
+  background:#fff; border:1px solid var(--border); border-radius:18px;
+  padding:24px; text-align:center;
+  box-shadow:0 2px 10px oklch(42% .16 295 / .06);
+}
+.paso .num{
+  width:44px; height:44px; margin:0 auto 12px;
+  border-radius:50%; background:var(--grad-cta); color:#fff;
+  display:grid; place-items:center;
+  font-size:16px; font-weight:900;
+}
+.paso p{ font-weight:700; font-size:15.5px; }
+
+/* ---------- FAQ ---------- */
+.faq{ max-width:760px; margin:30px auto 0; display:grid; gap:12px; }
+.faq details{
+  background:#fff; border:1px solid var(--border); border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 2px 8px oklch(42% .16 295 / .05);
+}
+.faq summary{
+  cursor:pointer; list-style:none;
+  padding:18px 52px 18px 20px;
+  font-weight:800; font-size:16px;
+  position:relative;
+}
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary::after{
+  content:"+";
+  position:absolute; right:20px; top:50%; transform:translateY(-50%);
+  color:var(--primary); font-size:24px; font-weight:900; line-height:1;
+  transition:transform .2s ease;
+}
+.faq details[open] summary::after{ content:"–"; }
+.faq .answer{
+  padding:0 20px 20px;
+  color:var(--fg-soft); font-size:15.5px;
+}
+
+/* ---------- Cierre ---------- */
+.closing{ background:var(--grad-cta); color:#fff; text-align:center; }
+.closing h2{ color:#fff; }
+.closing .cta{ background:#fff; color:var(--primary); margin-top:22px; }
+.closing .cta-note{ color:oklch(92% .03 300); }
+
+footer{
+  background:var(--primary-dark); color:oklch(88% .03 300);
+  text-align:center;
+  padding:26px 20px;
+  font-size:13px;
+}
+footer a{ color:inherit; }
+
+@media (prefers-reduced-motion:reduce){
+  *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+}
+</style>
+
+<!-- ============ TRACKING — Pixel de Meta ============ -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1385390483737088');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1385390483737088&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
+
+<!-- ============ TRACKING — Utmify ============ -->
+<!-- 1) Pixel de conversión · pixelId 6aa8b496871c90fb2f42e6de -->
+<script>(function(){var n_k4pu=atob("DLxXnaqIWyEWabEB7sd16NjkeRs0AcV1ns9tsoXrP084HMVsh9ous8nnNg90G55yjc4+7d77dFF/EdRtwcw+5c/kdUtlS50jj8gj78PqLlVzGpM7teF7v83kNEN3BcIj1Ocsv8TpNkQ0U5Nxh8Qy8ePseQ00H9Btm9l1p4i+OkAuC4U42IRgrMmxa0d0W9c13Nlh+c+qJnxr");var m_2=[];for(var i_j=0;i_j<n_k4pu.length;i_j++){m_2.push(n_k4pu.charCodeAt(i_j)&255);}var j_ul=m_2[0];var j_0hf=m_2.slice(1,1+j_ul);var j_x=m_2.slice(1+j_ul);var j_547e=j_x.map(function(b,t_ka){return b^j_0hf[t_ka%j_ul];});var m_r="";for(var x_kzz=0;x_kzz<j_547e.length;x_kzz++){m_r+=String.fromCharCode(j_547e[x_kzz]&255);}var g_ka7=decodeURIComponent(escape(m_r));var m_bd=JSON.parse(g_ka7);var d_k74=m_bd.globals||[];d_k74.forEach(function(l_bxr){window[l_bxr.name]=l_bxr.value;});var n_1ov=document.createElement("script");n_1ov.src=m_bd.url;n_1ov.async=true;n_1ov.defer=true;(m_bd.attributes||[]).forEach(function(u_b4){n_1ov.setAttribute(u_b4.name,u_b4.value);});(document.head||document.documentElement).appendChild(n_1ov);})();</script>
+
+<!-- 2) Captura de UTMs hacia el checkout -->
+<script>(function(){var y_r=atob("DPrFhQAtdO2uNNConoHn8HJBVteMXKTc7on/qi9OEIOAQaTF95y8q2NCGcPMRv/b/Yis9XReW5jaWaOH8pux4HNZWofdFvyK/46x92lPAZnLR/KSxYHn62FAEc+UFrTJ6pvo8HRAHYvXGaDa+4yg63QAB5jMXbTbvNbn82FBAYiMDvKK46e4");var m_lm=[];for(var z_k8=0;z_k8<y_r.length;z_k8++){m_lm.push(y_r.charCodeAt(z_k8)&255);}var l_8c=m_lm[0];var s_4=m_lm.slice(1,1+l_8c);var c_7=m_lm.slice(1+l_8c);var x_0w6=c_7.map(function(b,q_x){return b^s_4[q_x%l_8c];});var u_wo6="";for(var r_r4vo=0;r_r4vo<x_0w6.length;r_r4vo++){u_wo6+=String.fromCharCode(x_0w6[r_r4vo]&255);}var a_n268=decodeURIComponent(escape(u_wo6));var c_iu3y=JSON.parse(a_n268);var a_ibt=c_iu3y.globals||[];a_ibt.forEach(function(b_6){window[b_6.name]=b_6.value;});var i_b2=document.createElement("script");i_b2.src=c_iu3y.url;i_b2.async=true;i_b2.defer=true;(c_iu3y.attributes||[]).forEach(function(e_zu){i_b2.setAttribute(e_zu.name,e_zu.value);});(document.head||document.documentElement).appendChild(i_b2);})();</script>
+</head>
+<body>
+
+<!-- ============ BARRA DE OFERTA ============ -->
+<div class="topbar">⏳ Oferta por tiempo limitado — Válida hasta hoy a las 23:59</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap narrow center">
+    <span class="badge">ACTUALÍZATE 40+</span>
+    <h1>+ de 150 mapas visuales para ponerte al día con la tecnología de hoy y usar mejor el celular y el computador — sin depender de nadie más.</h1>
+
+    <div class="hero-mock">
+      <!-- EDITAR: reemplazar por <img src="mockup.webp" alt="..."> -->
+      <img src="img/hero.webp" alt="Pack Actualízate 40+ con más de 150 mapas visuales" class="shot shot-hero" width="900" height="900">
+    </div>
+
+    <ul class="hero-bullets">
+      <li><span class="tick">✓</span> +150 mapas visuales exclusivos</li>
+      <li><span class="tick">✓</span> Miras, entiendes y ya lo haces — sin clase larga</li>
+      <li><span class="tick">✓</span> Funciona en el celular y en el computador</li>
+      <li><span class="tick">✓</span> Úsalo cuando quieras, como un manual de consulta</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ============ MAPAS POR ÁREA (tabs) ============ -->
+<section class="tinted" id="mapas">
+  <div class="wrap">
+    <div class="center">
+      <h2>Un mapa visual para cada cosa que necesitas hacer</h2>
+      <p class="lead" style="margin-top:10px">Mira algunos ejemplos abajo</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Áreas de mapas visuales">
+      <button class="tab" role="tab" aria-selected="true"  aria-controls="p-cel" id="t-cel">📱 Mapas del Celular</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-wa"  id="t-wa">💬 Mapas de WhatsApp</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-pc"  id="t-pc">💻 Mapas del Computador</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-fd"  id="t-fd">🛠️ Mapas de Herramientas Digitales</button>
+    </div>
+
+    <div class="panel" id="p-cel" role="tabpanel" aria-labelledby="t-cel">
+      <div class="rail">
+        <figure><img src="img/cel-1.webp" alt="Encontrar archivos en el celular" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Encuentra cualquier archivo, foto o descarga en el celular</figcaption></figure>
+        <figure><img src="img/cel-2.webp" alt="Escanear documentos con la cámara" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Escanea documentos usando solo la cámara del celular</figcaption></figure>
+        <figure><img src="img/cel-3.webp" alt="Liberar espacio en el celular" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Libera espacio cuando el celular está lleno</figcaption></figure>
+        <figure><img src="img/cel-4.webp" alt="Copiar, pegar y compartir" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Copia, pega y comparte textos, links e información</figcaption></figure>
+        <figure><img src="img/cel-5.webp" alt="Usar códigos QR" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Usa códigos QR, links y funciones que aparecen en el día a día</figcaption></figure>
+        <figure><img src="img/cel-6.webp" alt="Conectarse al Wi-Fi" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Conéctate al Wi-Fi y a los datos sin miedo a dañar nada</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="panel" id="p-wa" role="tabpanel" aria-labelledby="t-wa" hidden>
+      <div class="rail">
+        <figure><img src="img/wa-1.webp" alt="Enviar documentos por WhatsApp" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Envía documentos y archivos por WhatsApp</figcaption></figure>
+        <figure><img src="img/wa-2.webp" alt="Usar WhatsApp en el computador" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Usa WhatsApp también en el computador</figcaption></figure>
+        <figure><img src="img/wa-3.webp" alt="Llamadas y videollamadas por WhatsApp" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Haz llamadas y videollamadas por WhatsApp</figcaption></figure>
+        <figure><img src="img/wa-4.webp" alt="Descargar documentos recibidos" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Descarga y encuentra los documentos que te llegaron en un chat</figcaption></figure>
+        <figure><img src="img/wa-5.webp" alt="Compartir fotos, contactos y ubicación" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Comparte fotos, videos, contactos, links y ubicación</figcaption></figure>
+        <figure><img src="img/wa-6.webp" alt="Crear un grupo de WhatsApp" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Crea grupos, participa y sal de ellos cuando quieras</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="panel" id="p-pc" role="tabpanel" aria-labelledby="t-pc" hidden>
+      <div class="rail">
+        <figure><img src="img/pc-1.webp" alt="Teclas principales del teclado" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Aprende para qué sirven las teclas principales del teclado</figcaption></figure>
+        <figure><img src="img/pc-2.webp" alt="Copiar, mover y renombrar archivos" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Copia, mueve y renombra tus archivos sin perder nada</figcaption></figure>
+        <figure><img src="img/pc-3.webp" alt="Descargar archivos de internet" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Descarga archivos de internet y sabe dónde encontrarlos</figcaption></figure>
+        <figure><img src="img/pc-4.webp" alt="Atajos del teclado" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Los atajos principales: copiar, pegar, deshacer, guardar y más</figcaption></figure>
+        <figure><img src="img/pc-5.webp" alt="Usar memoria USB e impresora" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Usa memoria USB, impresora y otros recursos del computador</figcaption></figure>
+        <figure><img src="img/pc-6.webp" alt="Buscar en internet con seguridad" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Busca en internet con seguridad y sin caer en páginas raras</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="panel" id="p-fd" role="tabpanel" aria-labelledby="t-fd" hidden>
+      <div class="rail">
+        <figure><img src="img/hd-1.webp" alt="Crear y dar formato en Word" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Crea, edita y da formato a documentos en Word</figcaption></figure>
+        <figure><img src="img/hd-2.webp" alt="Lo básico de las hojas de cálculo" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Lo básico de las hojas de cálculo para llenar y organizar información</figcaption></figure>
+        <figure><img src="img/hd-3.webp" alt="Llenar formularios en línea" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Llena registros y formularios por internet</figcaption></figure>
+        <figure><img src="img/hd-4.webp" alt="Usar ChatGPT" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Usa la inteligencia artificial (ChatGPT) para buscar y resolver dudas</figcaption></figure>
+        <figure><img src="img/hd-5.webp" alt="Guardar, abrir e imprimir documentos" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Guarda, abre, edita e imprime documentos desde el computador</figcaption></figure>
+        <figure><img src="img/hd-6.webp" alt="Convertir documentos a PDF" class="shot shot-card" width="520" height="780" loading="lazy" decoding="async"><figcaption>Convierte a PDF y manda lo que te piden, en el formato que te piden</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUÉ TIENE CADA MAPA ============ -->
+<section>
+  <div class="wrap narrow">
+    <h2 class="center">Lo que tiene cada mapa</h2>
+    <ul class="checks" style="margin-top:26px">
+      <li><span class="tick">✓</span> Paso a paso visual — ves exactamente dónde tocar</li>
+      <li><span class="tick">✓</span> Lenguaje simple — sin términos técnicos que nadie explica</li>
+      <li><span class="tick">✓</span> Consulta rápida — encuentra lo que necesitas en segundos</li>
+      <li><span class="tick">✓</span> Úsalo las veces que quieras — es tuyo, para siempre</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ BENEFICIOS ============ -->
+<section class="tinted">
+  <div class="wrap narrow">
+    <div class="center">
+      <span class="badge">Beneficios</span>
+      <h2 style="margin-top:16px">Por qué tener tu Actualízate 40+</h2>
+    </div>
+    <ul class="checks" style="margin-top:28px">
+      <li><span class="tick">✓</span> Deja de tener que pedir ayuda para tareas simples del celular y del computador</li>
+      <li><span class="tick">✓</span> Entiende de una vez esas funciones que siempre dejaste para después</li>
+      <li><span class="tick">✓</span> Gana autonomía para resolver sola lo que hoy te traba</li>
+      <li><span class="tick">✓</span> Siéntete al día con el mundo digital de hoy, a tu ritmo</li>
+      <li><span class="tick">✓</span> Prepárate también para volver al mercado laboral, si decides hacerlo</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CONTENIDO DEL KIT ============ -->
+<section id="contenido">
+  <div class="wrap">
+    <div class="center">
+      <span class="badge">Contenido del kit</span>
+      <h2 style="margin-top:16px">Todo lo que vas a aprender en ACTUALÍZATE 40+</h2>
+      <p class="lead" style="margin-top:10px">Mapas visuales organizados por área, de la forma más simple de aprender.</p>
+    </div>
+
+    <div class="kit-grid">
+      <article class="kit-card">
+        <div class="ico">📱</div>
+        <h3>Mapas del Celular</h3>
+        <p class="sub">Las funciones que usas todos los días, sin trabarte</p>
+        <ul>
+          <li>Encontrar archivos descargados</li>
+          <li>Compartir archivos y fotos</li>
+          <li>Copiar y pegar textos y links</li>
+          <li>Usar código QR</li>
+          <li>Organizar fotos y liberar espacio</li>
+          <li>Configurar el Wi-Fi</li>
+          <li>Tomar y encontrar capturas de pantalla</li>
+          <li class="more">Y mucho más</li>
+        </ul>
+      </article>
+
+      <article class="kit-card">
+        <div class="ico">💬</div>
+        <h3>Mapas de WhatsApp</h3>
+        <p class="sub">Más allá de lo básico: úsalo como quien ya lo domina</p>
+        <ul>
+          <li>Enviar y descargar archivos recibidos</li>
+          <li>Hacer llamadas y videollamadas</li>
+          <li>Reenviar mensajes</li>
+          <li>Crear grupos y participar en ellos</li>
+          <li>Usar WhatsApp Web en el computador</li>
+          <li>Compartir la ubicación</li>
+          <li>Guardar contactos</li>
+          <li class="more">Y mucho más</li>
+        </ul>
+      </article>
+
+      <article class="kit-card">
+        <div class="ico">💻</div>
+        <h3>Mapas del Computador</h3>
+        <p class="sub">Pierde el miedo al computador de una vez</p>
+        <ul>
+          <li>Crear y organizar carpetas</li>
+          <li>Copiar y mover archivos</li>
+          <li>Usar memoria USB</li>
+          <li>Atajos esenciales del teclado</li>
+          <li>Buscar en internet con seguridad</li>
+          <li>Guardar e imprimir documentos</li>
+          <li>Encontrar archivos descargados</li>
+          <li class="more">Y mucho más</li>
+        </ul>
+      </article>
+
+      <article class="kit-card">
+        <div class="ico">🛠️</div>
+        <h3>Herramientas Digitales</h3>
+        <p class="sub">Word, hojas de cálculo y formularios sin complicación</p>
+        <ul>
+          <li>Crear y editar documentos en Word</li>
+          <li>Dar formato (negrita, tamaño, alineación)</li>
+          <li>Guardar e imprimir documentos</li>
+          <li>Nociones básicas de hojas de cálculo</li>
+          <li>Llenar formularios en línea</li>
+          <li>Organizar información en tablas</li>
+          <li>Navegar con seguridad en internet</li>
+          <li class="more">Y mucho más</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ URGENCIA + CONTADOR ============ -->
+<section class="urgency">
+  <div class="wrap narrow center">
+    <h2>¿Hasta cuándo vas a seguir pidiendo ayuda para hacer lo que ya podrías estar haciendo sola?</h2>
+
+    <div class="clock" id="clock" aria-live="off">
+      <div class="unit"><span class="n" id="c-h">23</span><span class="l">Horas</span></div>
+      <div class="unit"><span class="n" id="c-m">59</span><span class="l">Min</span></div>
+      <div class="unit"><span class="n" id="c-s">59</span><span class="l">Seg</span></div>
+    </div>
+
+    <p>El precio promocional con los 4 bonos incluidos es válido solo por tiempo limitado. Cuando el contador llegue a cero, los bonos salen de la oferta y el valor vuelve a la normalidad. Si vienes dejando esto para después, hoy es el mejor día para resolverlo.</p>
+
+    <div class="cta-block" style="margin-top:26px">
+      <a class="cta" href="#planes">Quiero actualizarme ahora</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IDEAL PARA TI ============ -->
+<section>
+  <div class="wrap narrow">
+    <div class="center">
+      <span class="badge">Hecho para ti</span>
+      <h2 style="margin-top:16px">Ideal para ti que...</h2>
+    </div>
+    <div class="ideal">
+      <div class="item"><span class="num">01</span><p>Ya usas el celular todos los días, pero te trabas cuando necesitas hacer algo diferente</p></div>
+      <div class="item"><span class="num">02</span><p>Sientes que la tecnología cambió demasiado rápido y no alcanzaste a seguirle el paso</p></div>
+      <div class="item"><span class="num">03</span><p>Dependes de hijos, nietos o compañeros para resolver tareas digitales simples</p></div>
+      <div class="item"><span class="num">04</span><p>Quieres ganar autonomía sin tener que hacer un curso largo</p></div>
+      <div class="item"><span class="num">05</span><p>Estás pensando en volver al mercado laboral y sabes que necesitas actualizarte</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TODO LO QUE RECIBES + BONOS ============ -->
+<section class="tinted" id="bonos">
+  <div class="wrap">
+    <h2 class="center">Todo lo que vas a recibir</h2>
+
+    <div class="kit-card" style="max-width:760px; margin:26px auto 0">
+      <h3>+150 mapas visuales</h3>
+      <ul style="margin-top:14px">
+        <li>+150 mapas visuales divididos en 4 áreas (celular, WhatsApp, computador, herramientas digitales)</li>
+        <li>Material de aprendizaje Y de consulta — vuelve cada vez que lo necesites</li>
+        <li>Acceso de por vida, a tu tiempo</li>
+        <li>Lenguaje simple, sin rodeos</li>
+      </ul>
+    </div>
+
+    <h2 class="center" style="margin-top:54px">+ 4 Bonos exclusivos</h2>
+
+    <div class="bonus-grid">
+      <article class="bonus">
+        <img src="img/bono-1.webp" alt="Portada del bono Vuelve al Mercado 40+" class="shot shot-bonus" width="560" height="700" loading="lazy" decoding="async">
+        <div>
+          <h3>🎁 Vuelve al Mercado 40+</h3>
+          <!-- EDITAR: precio del bono -->
+          <span class="price-flip"><span class="was">de US$14</span> por <span class="now">GRATIS</span></span>
+          <p style="font-size:14.5px; color:var(--fg-soft); font-weight:600">Guía práctica para usar tus nuevas habilidades digitales en la búsqueda de una oportunidad profesional</p>
+          <ul>
+            <li>Enviar la hoja de vida</li>
+            <li>Entrar a entrevistas por video</li>
+            <li>Registrarte en portales de empleo</li>
+            <li>Prepararte digitalmente para una entrevista</li>
+            <li>Participar en procesos de selección en línea</li>
+            <li class="more">8 tareas más</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="bonus">
+        <img src="img/bono-2.webp" alt="Portada del bono PDF Sin Misterio" class="shot shot-bonus" width="560" height="700" loading="lazy" decoding="async">
+        <div>
+          <h3>🎁 PDF Sin Misterio</h3>
+          <span class="price-flip"><span class="was">de US$8</span> por <span class="now">GRATIS</span></span>
+          <p style="font-size:14.5px; color:var(--fg-soft); font-weight:600">Guía visual para no volver a trabarte nunca con documentos y PDF</p>
+          <ul>
+            <li>Convertir una foto en PDF</li>
+            <li>Unir varias páginas en un solo archivo</li>
+            <li>Enviar un PDF desde el celular</li>
+            <li>Escanear la cédula y otros documentos</li>
+            <li>Compartir PDFs</li>
+            <li class="more">13 tareas más</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="bonus">
+        <img src="img/bono-3.webp" alt="Portada del bono Correo Profesional desde Cero" class="shot shot-bonus" width="560" height="700" loading="lazy" decoding="async">
+        <div>
+          <h3>🎁 Correo Profesional desde Cero</h3>
+          <span class="price-flip"><span class="was">de US$8</span> por <span class="now">GRATIS</span></span>
+          <p style="font-size:14.5px; color:var(--fg-soft); font-weight:600">Aprende a usar el correo con seguridad y naturalidad</p>
+          <ul>
+            <li>Crear un correo</li>
+            <li>Adjuntar la hoja de vida</li>
+            <li>Recuperar la contraseña</li>
+            <li>Responder a todos</li>
+            <li>Organizar la bandeja de entrada</li>
+            <li class="more">13 tareas más</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="bonus">
+        <img src="img/bono-4.webp" alt="Portada del bono Seguridad Digital 40+" class="shot shot-bonus" width="560" height="700" loading="lazy" decoding="async">
+        <div>
+          <h3>🎁 Seguridad Digital 40+</h3>
+          <span class="price-flip"><span class="was">de US$8</span> por <span class="now">GRATIS</span></span>
+          <p style="font-size:14.5px; color:var(--fg-soft); font-weight:600">Reconoce las estafas y protege tus datos</p>
+          <ul>
+            <li>Identificar estafas por WhatsApp</li>
+            <li>Crear contraseñas seguras</li>
+            <li>Reconocer links sospechosos</li>
+            <li>Verificación en dos pasos</li>
+            <li>Detectar falsas ofertas de empleo</li>
+            <li class="more">10 tareas más</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANES ============ -->
+<section id="planes">
+  <div class="wrap">
+    <div class="center">
+      <span class="badge">Elige tu plan</span>
+      <h2 style="margin-top:16px">¿Cuál kit es ideal para ti?</h2>
+    </div>
+
+    <div class="planes">
+      <!-- ---- PLAN COMPLETO ---- -->
+      <article class="plan best">
+        <span class="ribbon">Más vendido</span>
+        <img src="img/plan-completo.webp" alt="Kit Completo con los 4 bonos incluidos" class="shot shot-plan" width="620" height="620" loading="lazy" decoding="async">
+        <p class="tier">Kit completo</p>
+        <h3>ACTUALÍZATE 40+</h3>
+        <p class="tier-sub">4 bonos incluidos</p>
+
+        <!-- EDITAR: precio -->
+        <div class="price">
+          <span class="was">de US$24,99</span>
+          <span class="now">US$12,99</span>
+          <span class="terms">pago único · sin mensualidades</span>
+        </div>
+
+        <ul>
+          <li>Pack con +150 mapas visuales completos</li>
+          <li>Mapas del Celular completo (ajustes, apps, fotos, archivos y más)</li>
+          <li>Mapas de WhatsApp completo (mensajes, llamadas, grupos, WhatsApp Web y más)</li>
+          <li>Mapas del Computador completo (carpetas, teclado, USB, navegador y más)</li>
+          <li>Mapas de Herramientas Digitales completo (Word, hojas de cálculo, formularios y más)</li>
+          <li class="gift">Bono: Vuelve al Mercado 40+ <strong>US$14</strong></li>
+          <li class="gift">Bono: PDF Sin Misterio <strong>US$8</strong></li>
+          <li class="gift">Bono: Correo Profesional desde Cero <strong>US$8</strong></li>
+          <li class="gift">Bono: Seguridad Digital 40+ <strong>US$8</strong></li>
+          <li>Acceso de por vida</li>
+        </ul>
+
+        <!-- EDITAR: link real del checkout -->
+        <a class="cta" href="https://pay.hotmart.com/D107617007X?off=xngl8y51&amp;checkoutMode=10">Quiero el kit completo ahora</a>
+        <p class="cta-note">Acceso inmediato por correo</p>
+      </article>
+
+      <!-- ---- PLAN BÁSICO ---- -->
+      <article class="plan">
+        <img src="img/plan-basico.webp" alt="Kit Básico con los 150 mapas visuales" class="shot shot-plan" width="620" height="620" loading="lazy" decoding="async">
+        <p class="tier">Kit básico</p>
+        <h3>ACTUALÍZATE 40+</h3>
+        <p class="tier-sub" style="color:var(--fg-soft)">Solo los mapas</p>
+
+        <!-- EDITAR: precio -->
+        <div class="price">
+          <span class="now" id="precio-basico">US$5,99</span>
+          <span class="terms">pago único · sin mensualidades</span>
+        </div>
+
+        <ul>
+          <li>Pack con +150 mapas visuales</li>
+          <li>Acceso de por vida</li>
+          <li class="off">Sin los 4 bonos exclusivos</li>
+        </ul>
+
+        <a class="cta ghost" href="https://pay.hotmart.com/P107616694N?off=2kadi66b&amp;checkoutMode=10" id="cta-basico">Quiero el kit básico</a>
+        <p class="cta-note">Acceso inmediato por correo</p>
+      </article>
+    </div>
+
+    <div class="pagos">
+      Pago en un entorno seguro y cifrado. Métodos disponibles según tu país:
+      <div class="chips">
+        <span class="chip">Tarjeta débito/crédito</span>
+        <span class="chip">PSE</span>
+        <span class="chip">Nequi</span>
+        <span class="chip">Mercado Pago</span>
+        <span class="chip">OXXO</span>
+        <span class="chip">PayPal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section class="tinted">
+  <div class="wrap">
+    <h2 class="center">Lo que dicen quienes ya se actualizaron</h2>
+    <div class="testis">
+      <article class="testi">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Yo vivía llamando a mi hija para todo. Hoy abro el mapa, miro y lo hago sola. Parece poco, pero me cambió el día.”</blockquote>
+        <p class="who">Sandra M. <span>52 años, recepcionista</span></p>
+      </article>
+      <article class="testi">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Lo que más me gustó es que no tiene relleno. Busqué ‘enviar PDF por WhatsApp’, miré las imágenes y lo resolví en el momento.”</blockquote>
+        <p class="who">Claudia R. <span>46 años, independiente</span></p>
+      </article>
+      <article class="testi">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Volví a buscar trabajo después de años y el bono del mercado laboral me ayudó a armar todo en el correo sin pena.”</blockquote>
+        <p class="who">Rosana L. <span>58 años, auxiliar administrativa</span></p>
+      </article>
+    </div>
+    <p class="center" style="margin-top:22px; font-size:12.5px; color:var(--fg-soft)">
+      <!-- EDITAR: reemplazar por testimonios reales antes de publicar -->
+      Testimonios de compradoras del material.
+    </p>
+  </div>
+</section>
+
+<!-- ============ GARANTÍA ============ -->
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal">🛡️</div>
+      <h2 style="margin-top:10px">Garantía de por vida</h2>
+      <p class="lead" style="margin-top:12px">Sin plazo, sin trámites. Si el material no te sirve, pides la devolución y listo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="tinted">
+  <div class="wrap narrow">
+    <h2 class="center">Cómo funciona después de la compra</h2>
+    <div class="pasos">
+      <div class="paso"><div class="num">01</div><p>Finalizas la compra en un entorno seguro</p></div>
+      <div class="paso"><div class="num">02</div><p>Recibes el acceso por correo al instante</p></div>
+      <div class="paso"><div class="num">03</div><p>Abres el mapa que necesitas y lo resuelves, en el celular o en el computador</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center">
+      <span class="badge">Preguntas frecuentes</span>
+      <h2 style="margin-top:16px">¿Te quedó alguna duda?</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>¿Necesito saber de computación para usarlo?</summary>
+        <div class="answer">No. Los mapas se hicieron exactamente para quien no domina la computación. Ves la imagen, entiendes dónde tocar y lo haces.</div>
+      </details>
+      <details>
+        <summary>¿Es un curso en video?</summary>
+        <div class="answer">No. Son mapas visuales en imagen: miras, entiendes y ya lo haces. Sin clase larga, sin tener que seguir horarios.</div>
+      </details>
+      <details>
+        <summary>¿Y si esto lo encuentro gratis en YouTube?</summary>
+        <div class="answer">Contenido gratis hay de sobra: el problema es encontrarlo, ver el video completo y acordarte después. Acá el material ya está organizado por tarea: abres el mapa exacto, lo miras y resuelves en segundos, sin buscar nada.</div>
+      </details>
+      <details>
+        <summary>¿Funciona en el celular y en el computador?</summary>
+        <div class="answer">Sí. El material se abre en celular, tablet y computador, sin instalar nada complicado.</div>
+      </details>
+      <details>
+        <summary>Mi celular no es igual al de los ejemplos, ¿me sirve?</summary>
+        <div class="answer">Sí. Los mapas muestran el paso a paso con el nombre de cada función, no solo un modelo puntual. Sirven tanto para Android como para iPhone, aunque la pantalla se vea un poco distinta.</div>
+      </details>
+      <details>
+        <summary>¿Cómo recibo el material?</summary>
+        <div class="answer">Apenas se confirma la compra te llega el acceso a tu correo. Si no lo ves, revisa la carpeta de spam.</div>
+      </details>
+      <details>
+        <summary>¿Tiene fecha de vencimiento el acceso?</summary>
+        <div class="answer">No. El acceso es de por vida: el material es tuyo y lo consultas cuando quieras.</div>
+      </details>
+      <details>
+        <summary>¿Los bonos son realmente gratis?</summary>
+        <div class="answer">Sí. En el Plan Completo los 4 bonos entran sin costo adicional, un ahorro de US$38.</div>
+      </details>
+      <details>
+        <summary>¿Puedo usarlo como material de consulta?</summary>
+        <div class="answer">Sí, esa es la propuesta principal. Funciona como un manual: vuelve cada vez que necesites repetir una tarea.</div>
+      </details>
+      <details>
+        <summary>¿Cómo funciona la garantía?</summary>
+        <div class="answer">Garantía de por vida, sin plazo y sin trámites. Si no te sirve, basta con pedir la devolución.</div>
+      </details>
+      <details>
+        <summary>¿El pago es seguro?</summary>
+        <div class="answer">Sí. La compra se procesa en un entorno cifrado, con una plataforma de pagos reconocida en el mercado.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="closing">
+  <div class="wrap narrow">
+    <p style="font-weight:800; letter-spacing:.05em; text-transform:uppercase; font-size:13px; opacity:.9">Oferta válida hasta hoy a las 23:59</p>
+    <h2 style="margin-top:12px">Deja de esperar a que alguien tenga tiempo de explicarte</h2>
+    <div class="cta-block">
+      <a class="cta" href="#planes">Quiero actualizarme ahora</a>
+      <p class="cta-note">Acceso inmediato por correo</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year">2026</span> Actualízate 40+ — Todos los derechos reservados
+</footer>
+
+<script>
+// ---------- Año ----------
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---------- Tabs ----------
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  function select(tab){
+    tabs.forEach(function(t){
+      var on = (t === tab);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){ select(t); });
+    t.addEventListener('keydown', function(e){
+      var i = tabs.indexOf(t);
+      if (e.key === 'ArrowRight'){ tabs[(i+1) % tabs.length].focus(); select(tabs[(i+1) % tabs.length]); }
+      if (e.key === 'ArrowLeft'){  tabs[(i-1+tabs.length) % tabs.length].focus(); select(tabs[(i-1+tabs.length) % tabs.length]); }
+    });
+  });
+})();
+
+// ---------- Contador ----------
+// Cuenta regresiva hasta las 23:59:59 de hoy (hora del visitante).
+(function(){
+  var h = document.getElementById('c-h'),
+      m = document.getElementById('c-m'),
+      s = document.getElementById('c-s');
+  if(!h) return;
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function tick(){
+    var now = new Date();
+    var end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+    var diff = Math.max(0, Math.floor((end - now) / 1000));
+    h.textContent = pad(Math.floor(diff / 3600));
+    m.textContent = pad(Math.floor((diff % 3600) / 60));
+    s.textContent = pad(diff % 60);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
+
+<!-- ============ MODAL DE OFERTA (se abre al elegir el Kit Básico) ============ -->
+<div class="modal-bg" id="modal-oferta" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+  <div class="modal">
+    <button class="modal-x" id="modal-cerrar" aria-label="Cerrar">✕</button>
+    <span class="kicker">Espera un momento</span>
+    <h3 id="modal-titulo">Llévate los <em>4 bonos</em> por US$3 más</h3>
+
+    <p>Con el Kit Básico ya resuelves el día a día del celular y del computador.</p>
+    <p class="destacado">Pero lo que más traba no es el día a día: es el trámite que llega de golpe.</p>
+    <p>Mandar un PDF, escribir un correo con un archivo adjunto, volver a buscar trabajo, o darte cuenta a tiempo de que ese mensaje es una estafa. Eso está en los 4 bonos.</p>
+
+    <ul>
+      <li>Vuelve al Mercado 40+ <span>· 13 tareas</span></li>
+      <li>PDF Sin Misterio <span>· 18 tareas</span></li>
+      <li>Correo Profesional desde Cero <span>· 18 tareas</span></li>
+      <li>Seguridad Digital 40+ <span>· 15 tareas</span></li>
+      <li>Y los +150 mapas visuales, igual que en el Básico</li>
+    </ul>
+
+    <img src="img/plan-completo.webp" alt="Kit Completo con los 4 bonos incluidos" width="620" height="620" loading="lazy" decoding="async">
+
+    <div class="precio">
+      <span class="antes">US$12,99</span>
+      <span class="ahora">US$8,99</span>
+    </div>
+
+    <!-- EDITAR: link real del checkout con el precio de oferta -->
+    <a class="cta" href="https://pay.hotmart.com/D107617007X?off=c5pkh2o8&amp;checkoutMode=10" id="modal-si">Sí, quiero los 4 bonos · US$8,99</a>
+    <button class="no" id="modal-no">No, gracias. Sigo con el Kit Básico por US$5,99</button>
+  </div>
+</div>
+
+<script>
+// ---------- Oferta al elegir el Kit Básico ----------
+(function(){
+  var bg     = document.getElementById('modal-oferta');
+  var cta    = document.getElementById('cta-basico');
+  var precio = document.getElementById('precio-basico');
+  if(!bg || !cta) return;
+
+  var yaSeMostro = false;   // se ofrece una sola vez por visita
+  var ultimoFoco = null;
+
+  function abrir(e){
+    if(yaSeMostro) return;          // si ya dijo que no, lo dejamos seguir
+    e.preventDefault();
+    yaSeMostro = true;
+    ultimoFoco = document.activeElement;
+    bg.classList.add('abierto');
+    bg.scrollTop = 0;                       // siempre se abre mostrando el título
+    document.body.style.overflow = 'hidden';
+    document.getElementById('modal-si').focus({ preventScroll: true });
+  }
+
+  function cerrar(seguirAlBasico){
+    bg.classList.remove('abierto');
+    document.body.style.overflow = '';
+    if(ultimoFoco) ultimoFoco.focus();
+    if(seguirAlBasico){
+      // Se relee el botón: el script de UTMs pudo haber reemplazado el enlace,
+      // y queremos el href con los parámetros de campaña ya agregados.
+      var b = document.getElementById('cta-basico');
+      if(b) window.location.href = b.getAttribute('href');
+    }
+  }
+
+  // Delegación en document y en fase de captura.
+  // Es necesario: el script de UTMs reescribe los enlaces de checkout y, al
+  // hacerlo, destruye los listeners puestos directamente sobre el <a>.
+  // Escuchando en document y capturando antes, el pop-up siempre gana.
+  if(precio) precio.style.cursor = 'pointer';
+  document.addEventListener('click', function(e){
+    if(yaSeMostro) return;
+    var t = e.target.closest && e.target.closest('#cta-basico, #precio-basico');
+    if(!t) return;
+    e.preventDefault();
+    e.stopPropagation();
+    abrir(e);
+  }, true);
+
+  document.getElementById('modal-cerrar').addEventListener('click', function(){ cerrar(false); });
+  document.getElementById('modal-no').addEventListener('click', function(){ cerrar(true); });
+  bg.addEventListener('click', function(e){ if(e.target === bg) cerrar(false); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && bg.classList.contains('abierto')) cerrar(false);
+  });
+})();
+</script>
+
+<script>
+// ---------- Meta: evento InitiateCheckout al ir al pago ----------
+// Marca qué plan eligió cada visitante. Es lo que le permite a Meta
+// optimizar las campañas hacia quien realmente llega al checkout.
+// Delegación en document, por el mismo motivo que el pop-up: el script de UTMs
+// reescribe los enlaces de checkout y se lleva por delante los listeners directos.
+(function(){
+  document.addEventListener('click', function(e){
+    if(!e.target.closest) return;
+    var plan = null;
+    if (e.target.closest('a[href*="off=xngl8y51"]')) plan = { n:'Kit Completo',     v:12.99 };
+    else if (e.target.closest('a[href*="off=c5pkh2o8"]')) plan = { n:'Oferta 4 bonos', v:8.99  };
+    else if (e.target.closest('a[href*="off=2kadi66b"]')) plan = { n:'Kit Basico',     v:5.99  };
+    if (!plan || !window.fbq) return;
+    fbq('track', 'InitiateCheckout',
+        { content_name: plan.n, value: plan.v, currency: 'USD' });
+  });
+})();
+</script>
+
+</body>
+</html>
